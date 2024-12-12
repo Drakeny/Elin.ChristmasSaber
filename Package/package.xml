@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Christmas Red Saber - Custom Adventurer</title>
+  <id>drakenydev_elin_padoru</id>
+  <author>Drakeny</author>
+  <builtin>false</builtin>
+  <loadPriority>100</loadPriority>
+  <version>0.23.54</version>
+  <tags>NPC</tags>
+  <description>
+	It's that time of the year... Time to PADORU!
+	
+	[h2]Features[/h2]
+	[b]She spins![/b]
+	[b]She sings![/b]
+	[b]She gifts![/b] [i]Only once a year. (in-game year)[/i]
+	[b]She will wreck you in a duel.[/b] [spoiler] Probably. [/spoiler]
+	
+	[h2]Features[/h2]
+	- Safe to Install and Uninstall on existing saves
+	- You might need to talk to her a couple of times before she decides to give you a present.
+	- If you receive her present and leave the game without saving she'll not give more presents. [b]You ungrateful brat.[/b] [spoiler] Although, she might reconsider it if you delete the .json file in the mod folder. [/spoiler]
+  </description>
+  <visibility>Unlisted</visibility>
+</Meta>
