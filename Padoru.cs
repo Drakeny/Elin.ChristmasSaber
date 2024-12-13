@@ -37,11 +37,11 @@ public class Padoru
     [HarmonyPrefix, HarmonyPatch(typeof(DramaCustomSequence), "Build")]
     public static bool Build(DramaCustomSequence __instance, Chara c)
     {
-        if (c.source.id == "padoru" && !CanReceivePresent())
+        if (c.source.id == "padoru" && CanReceivePresent())
         {
             __instance.Step("Resident");
-            __instance._Talk("tg", () => "Umu~! You get a present too, Merry~!");
-            DramaChoice choice = __instance.Choice2("Thank you!", "_bye");
+            __instance._Talk("tg", () => "padoru_greet".lang());
+            DramaChoice choice = __instance.Choice2("padoru_bye".lang(), "_bye");
             choice.SetOnClick(delegate
             {
                 ReceivePresent();
@@ -50,7 +50,7 @@ public class Padoru
             __instance.Step("_bye");
             __instance.Method(delegate
             {
-                c.Talk("Umu~");
+                c.TalkRaw("Umu~");
             });
             __instance.End();
             return false;
